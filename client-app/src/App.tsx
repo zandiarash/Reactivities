@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Duck } from './test'
+import  DuckItem  from './DuckItem'
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {Duck.map(duck => (
+            <DuckItem duck={duck} />
+          ))}
         </a>
       </header>
     </div>
