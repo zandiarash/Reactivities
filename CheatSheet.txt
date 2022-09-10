@@ -1,0 +1,5 @@
+dotnet tool update --global dotnet-ef
+dotnet-ef  migrations add InitCreate -p Presistence/ -s API/
+
+
+npx create-react-app client-app --use-npm --template typescript
