@@ -21,7 +21,6 @@ if (app.Environment.IsDevelopment())
 }
 app.UseAuthorization();
 app.MapControllers();
-//app.Run();
 
 var scope = app.Services.CreateScope();
 var Services = scope.ServiceProvider;
