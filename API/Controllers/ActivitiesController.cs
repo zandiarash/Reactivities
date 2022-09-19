@@ -24,7 +24,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Activity>> GetActivity(Guid Id)
         {
-            return await _context.Activities.FindAsync(Id);
+            return await _context.Activities.FirstOrDefault(x=>x.Id == Id);
         }
     }
 }
